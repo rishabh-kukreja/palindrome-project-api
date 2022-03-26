@@ -1,7 +1,7 @@
 GET http://localhost:3000/messages
 
 ###
-GET http://localhost:3000/messages/623c18d625da4a6be10f981a
+GET http://localhost:3000/messages/623e95e64b6bd1b978f39874
 
 
 ###
@@ -9,8 +9,8 @@ POST http://localhost:3000/messages/
 Content-Type: application/json
 
 {
-    "userName": "Rish Kukreja",
-    "messageBody": "oyo"
+    "userName": "Rishabh K",
+    "messageBody": "wowow"
 }
 ###
 POST http://localhost:3000/messages/
@@ -22,12 +22,12 @@ Content-Type: application/json
 }
 
 ###
-DELETE http://localhost:3000/messages/623c18d625da4a6be10f981a
+DELETE http://localhost:3000/messages/623e95e64b6bd1b978f39874
 
 ###
-PATCH http://localhost:3000/messages/623d67a306b753a5a5e0a2bd
+PATCH http://localhost:3000/messages/623e95e64b6bd1b978f39874
 Content-Type: application/json
 
 {
-    "messageBody": "hahahah"
+    "messageBody": "lalalal"
 }
