@@ -1,6 +1,9 @@
 GET http://localhost:3000/messages
 
 ###
+GET https://palindrome-project.herokuapp.com/messages
+
+###
 GET http://localhost:3000/messages/623e95e64b6bd1b978f39874
 
 
