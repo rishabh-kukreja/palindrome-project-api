@@ -25,6 +25,8 @@ Response
 The REST has 3 main components, i.e Client, Server, and Database.
 
 #### System Architecture
+![Image description](https://github.com/rishabh-kukreja/palindrome-project-api/img/system-architecture.jpg)
+
 
 ### REST API
 
