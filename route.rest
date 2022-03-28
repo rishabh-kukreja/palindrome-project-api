@@ -4,7 +4,7 @@ GET http://localhost:3000/messages
 GET https://palindrome-project.herokuapp.com/messages
 
 ###
-GET http://localhost:3000/messages/623e95e64b6bd1b978f39874
+GET http://localhost:3000/messages/623d677e06b753a5a5e0a2b8
 
 
 ###
@@ -12,8 +12,8 @@ POST http://localhost:3000/messages/
 Content-Type: application/json
 
 {
-    "userName": "Rishabh K",
-    "messageBody": "wowow"
+    "userName": "TEST USER 2",
+    "messageBody": "madam"
 }
 ###
 POST http://localhost:3000/messages/
@@ -25,12 +25,12 @@ Content-Type: application/json
 }
 
 ###
-DELETE http://localhost:3000/messages/623e95e64b6bd1b978f39874
+DELETE http://localhost:3000/messages/624161783e5b16615ee65147
 
 ###
-PATCH http://localhost:3000/messages/623e95e64b6bd1b978f39874
+PATCH http://localhost:3000/messages/62416f63d07d46eaf6f34431
 Content-Type: application/json
 
-{
-    "messageBody": "lalalal"
+{   "userName":"HI",
+    "messageBody":"no madam"
 }
