@@ -21,21 +21,13 @@ export const createNewMessage = async (userName, messageBody) => {
     const newMessage = await messageToCreate.save();
     return newMessage;
   } catch (err) {
-    // throw new Error(err.message);
     throw Error(err.message);
   }
 };
 
 export const getMessageById = async (msgId) => {
-  let messageFound;
   try {
-    messageFound = await Message.findById(msgId);
-    if (!messageFound)
-      return {
-        error: true,
-        statusCode: 404,
-        message: "msg not found",
-      };
+    let messageFound = await Message.findById(msgId);
     return messageFound;
   } catch (err) {
     throw Error(err.message);
@@ -45,12 +37,7 @@ export const getMessageById = async (msgId) => {
 export const deleteMessageById = async (msgId) => {
   try {
     let messageToBeDeleted = await Message.findById(msgId);
-    if (!messageToBeDeleted)
-      return {
-        error: true,
-        statusCode: 404,
-        message: "msg not found",
-      };
+    if (!messageToBeDeleted) return messageToBeDeleted;
     await messageToBeDeleted.remove();
     return { message: `Message with id ${msgId} deleted` };
   } catch (err) {

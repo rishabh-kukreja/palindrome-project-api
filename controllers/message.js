@@ -1,6 +1,4 @@
-import Message from "../models/message.js";
 import {
-  palindromCheck,
   createNewMessage,
   getAllMessages,
   getMessageById,
@@ -22,11 +20,7 @@ export const createdMessage = async (req, res, next) => {
   try {
     const msg = await createNewMessage(userName, messageBody);
     // res.send(msg);
-    return res.status(200).json({
-      status: 200,
-      data: msg,
-      message: "Succesfully Msg Created",
-    });
+    return res.status(200).json(msg);
     // next();
   } catch (e) {
     res.status(400).json({ status: 400, message: e.message });
@@ -36,6 +30,9 @@ export const createdMessage = async (req, res, next) => {
 export const getMessage = async (req, res) => {
   try {
     const messageFound = await getMessageById(req.params.id);
+    if (messageFound == null) {
+      return res.status(404).json({ message: "Cannot find message" });
+    }
     res.json(messageFound);
   } catch (err) {
     return res.status(500).json({ message: err.message });
@@ -45,6 +42,9 @@ export const getMessage = async (req, res) => {
 export const deleteMessage = async (req, res) => {
   try {
     const messageFound = await deleteMessageById(req.params.id);
+    if (messageFound == null) {
+      return res.status(404).json({ message: "Cannot find message" });
+    }
     res.json(messageFound);
   } catch (err) {
     res.status(500).json({ message: err.message });
