@@ -1,13 +1,13 @@
 # palindrome-project-api
 
 ## Project Description
-The project is about building a rest api that and performing the crud operations such as following:
+The project is about building a rest api Messages that performs the crud operations such as following:
 * Creating a message 
 * Retrieving the list of messages/ single message
 * Updating a message
 * Deleting a message
 
-The message api takes two parameters i.e the username person who’s sending the message and the messagebody which is the text that the user is sending. The output is the information about the message sender’s name, message text, date. The output also has a property which tells whether the message send is a palindrome or not. It’s depicted by the field “is_palindrome”. If it is true, then the message is a palindrome. 
+The message api takes two parameters i.e the username of the person who’s sending the message and the messagebody which is the text that the user is sending. The output is the information about the message sender’s name, message text, date. The output also has a property which tells whether the message send is a palindrome or not. It’s depicted by the field “is_palindrome”. If it is true, then the message is a palindrome. 
 
 ![Image](https://github.com/rishabh-kukreja/palindrome-project-api/blob/main/img/rest-design.jpg)
 
