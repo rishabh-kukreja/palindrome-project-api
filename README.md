@@ -57,21 +57,6 @@ The service has 4 endpoints which produce JSON responses.
 
 ![Image](https://github.com/rishabh-kukreja/palindrome-project-api/blob/main/img/sequence-diagram.jpg)
 
-
-#### Depedencies
-```
-"dotenv": Loads the environment variables from the .env file.
-"express": "Used to set up the server and routing",
-"mongoose": Object data modelling library for mongodb,
-"nodemon": Auotmatically restart the server when changes are made and saved
-```
-#### devDependencies 
-```
-"@types/chai-http": "^4.2.0",
-"chai": "^4.3.6",
-"chai-http": "^4.3.0",
-"mocha": "^9.2.2",
-"nodemon": "^2.0.15"
 ```
 ### Build
 1. Clone the repo. cd into the repo and open the terminal. To build, start run the following 
@@ -103,7 +88,8 @@ $ git push heroku master
 ### Test
 Testing is done using Mocha and Chai. To start the test, run the following
 ```
-npm test
+start the app $npm start
+run the test $ npm test
 ```
 
 
