@@ -57,7 +57,6 @@ The service has 4 endpoints which produce JSON responses.
 
 ![Image](https://github.com/rishabh-kukreja/palindrome-project-api/blob/main/img/sequence-diagram.jpg)
 
-```
 ### Build
 1. Clone the repo. cd into the repo and open the terminal. To build, start run the following 
 ```
@@ -87,8 +86,9 @@ $ git push heroku master
 
 ### Test
 Testing is done using Mocha and Chai. To start the test, run the following
+
 ```
-start the app $npm start
+start the app $ npm start
 run the test $ npm test
 ```
 
